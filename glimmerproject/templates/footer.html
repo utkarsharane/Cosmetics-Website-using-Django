@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glimmer</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" 
+     rel="stylesheet">
+</head>
+<body>
+<section class="contact">
+    <div class="contact-box">
+        <a href="" class="logo"><img src="{% static '/images/glimmer.png' %}" alt=""></a>
+        <br><center><h3>Shine the Moments</h3></center>
+    </div>
+    <div class="contact-box">
+        <h4>Quick links</h4>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="{% url 'index' %}">Shop</a></li>
+            <li><a href="{% url 'index' %}">Products</a></li>
+            <li><a href="#">Contact us</a></li>
+    </div>
+    <div class="contact-box">
+        <h4>Important links</h4>
+           <li><a href="{% url 'signin' %}">Signin</a></li>
+           <li><a href="{% url 'register' %}">Register</a></li>
+           <li><a href="{% url 'blog' %}">Blogs</a></li>
+           <li><a href="#">FAQs</a></li>
+           <li><a href="#">Terms of service</a></li>
+    </div>
+    <div class="contact-box">
+                    <h5>Glimmer Cosmetics</h5>
+                            <h5>Connect with us on Social Media</h5>
+                            <div class="social">
+                                <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a> 
+                                <a href="https://www.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a> 
+                            </div>
+    </div>
+    <div class="contact-box">
+            <h5>Contact us</h5>
+            <div class="sociall">
+             <i class='bx bx-home'>&nbsp;&nbsp;F-12 Oswal Empire, Boisar</i><br>
+             <i class='bx bxs-phone'>&nbsp;&nbsp;0123456789</i><br>
+             <i class='bx bx-envelope'>&nbsp;&nbsp;glimmercosmetics@gmail.com</i>
+            </div>
+    </div>
+</section>
+<div class="end-text">
+    <p>&copy;All Rights Reserved- Glimmer Cosmetics-2023</p>
+</div>
+</body>
+</html>
